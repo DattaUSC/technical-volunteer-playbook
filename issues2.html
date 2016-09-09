@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is the community playbook created by Benetech's Code Alliance program. Social Good 2.0.">
+    <meta name="author" content="code alliance, benetech, deep datta">
+
+    <title>Technical Volunteer Playbook</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        <img src="img/logo.png" style="height:45px; margin-top:-10px;" alt="Code Alliance logo white;" />
+                    </a>
+                </li>
+                <li style="color:white;">Table of Contents</li>
+                <li><a href="home.html">Home</a></li>
+
+        <li style="background-color:#032b5a"><a href="buildingaprogram.html">A. Building a Program</a></li>
+        <li><a href="github1.html">I. GitHub for Version Control</a></li>
+        <li><a href="issues2.html">II. Issues Management Tools</a></li>
+        <li><a href="stack3.html">III. Software Stack Guidelines</a></li>
+        <li><a href="qa4.html">IV. QA Process, Jenkins, Docker</a></li>
+        <li><a href="projectsheet5.html">V. Project Sheets</a></li>
+        <li><a href="feedback6.html">VI. Volunteer Feedback Mechanism</a></li>
+        <li><a href="website7.html">VII. Website Space for Volunteers</a></li>
+
+        <li style="background-color:#032b5a"><a href="hackevents.html">B. Social Good Hack Events</a></li>
+        <li><a href="eventtypes.html">Types of Events</a></li>
+        <li><a href="hackschedules.html">Sample Hackathon Schedules</a></li>
+        <li><a href="recruiting.html">Marketing and Recruiting</a></li>
+        <li><a href="volunteerconsiderations.html">Volunteer Considerations</a></li>
+               
+        <li style="background-color:#032b5a"><a href="socialgoodindex.html">C. Social Good Development Index</a></li>
+        <li><a href="checklist.html">Technical Volunteer Checklist</a></li>
+        <li><a href="licenses.html">Open Source Licenses</a></li>
+        <li><a href="otherorgs.html">Tech For Good Volunteer Orgs</a></li>
+        <li><a href="evolution.html">Nonprofit Tech Evolution</a></li>
+        <li><a href="devroles.html">Basic Developer Roles?</a></li>
+        <li><a href="commontools.html">Common Open Source Tools</a></li>
+        <li><a href="deploy.html">Tutorial: Basic Deployment</a></li>
+        <li><a href="hosting.html">Tutorial: Hosting a Static Website</a></li>
+        <li><a href="accessibility.html">Accessibility Testing Tools</a></li>
+        <li><a href="whyopensource.html">Why Open Source</a></li>
+        <li><a href="codealliance.html">Code Alliance Initiative</a></li>
+
+                   <li><a href="http://www.linkedin.com/in/shantanudeepdatta"><span style="font-size:12px;">Deep Datta</span></a></li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        
+        <!-- Top Navigation -->
+        <div style="width:100%; height:50px; background-color:white; border-bottom:1px solid black;">
+        <ul class="main-nav">
+                <li>
+                    <a href="#menu-toggle" id="menu-toggle" style="padding:50px; color:white;"><img src="img/navbars.png" style=" margin-left:-30px; height:30px;" alt="Toggle Menu Bar" /></a>
+                </li>
+                <li><a href="how-to.html">How To Use This Guide</a></li>
+                <li><a href="how-to-contribute.html">How To Contribute</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="project-summary-examples.html">Project Summary Examples</a></li>
+                <li><a href="services.html">Other Services</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Issue Management Tools and Processes</h1>
+                        <p>You should have a consistent way to track issues so that both your internal team and external volunteer developers are always on the same page. The more you can get your engineers and products managers to input tickets / issues in a way any volunteer can understand them, the less work you’ll have to do later to translate your team’s internal issues to outside volunteers and vice versa.</p>
+                        <p><b>Most organizations use either JIRA Issue Tracker or they use GitHub’s Issue area for all of their issue tracking; many organizations use both. Organizations often find that they prefer JIRA for internal issues, and GitHub to deal with issues that are more appropriate to have outside volunteers work on. The process should be customized to your workflow, but basic guidelines suggest that small issues specific to 1 product are better tracked in GitHub itself, while larger issues that may involve multiple projects are better tracked using JIRA. Again, there will be some experimentation in how to best manage issues, but these two tools will be paramount to your success.</b></p>
+                        <h2 style="font-size:18px;">GitHub Issue Tracker</h2>
+                        <p>In GitHub, issues are tracked through each repository. For example, if you have a repository for your nonprofit website called “nonprofit-site”, you would go into that repository and you will see a tab called “issues”. You can create all the issues that apply to this project. Developers will know that they are working on this specific repository and all the code is in one place.</p>
+                        <h3 style="font-size:22px;">Tutorial: Create your first issue on GitHub</h3>
+                        <p>To create an issue from this area, you can click on the green “<b>New Issue</b>” button.</p>
+                        <p>You can then enter an issue title and description, and finish by clicking on the “Submit New Issue” button. The title should define the issue such as “need spam filter for wordpress” and the description should be as detailed as possible and may want to include the specific libraries or skills you think are needed for the issue. If there are login credentials needed for the issue, you may want to post instructions in how to attain them.</p>
+                        <p>Also, users can comment on issues. Make sure you’re aware that users are writing to you directly from this issue tracking area.</p>
+                        <p>Once you have a mature developer environment, volunteers will work on these issues independently and push them back to your repository when they’re complete. You should be alerted by email from GitHub every time a volunteer wants to push their code. From your side, this is called a “pull request” and volunteers are actually asking that you pull their changes back to your repository.</p>
+                        <p>Once an issue has been completed, you can close it, and leave a comment. It’s always recommended to leave specific comments when working on GitHub so future volunteers can understand the progress of your product. Remember to update issues once they’re closed on your gh-pages as well.</p>
+                        <hr style="border:1px solid #EEE:">
+                        <h4 style="font-size:18px;">JIRA Issue Tracker:</h4>
+                        <p>JIRA is not an open source application, but it is widely used by technologists in all fields and has free licenses for nonprofits. JIRA is an issue-tracking product made by a company called Atlassian.</p>
+
+                        <p>You can apply for a free license for JIRA and other Atlassian products here: <a href="https://www.atlassian.com/software/views/community-license-request">https://www.atlassian.com/software/views/community-license-request</a></p>
+                        <p>Once you get your copy of JIRA setup, you’ll want to learn how issues are tracked in the system. In the example from Mifos (below), you can see that issues are stated in green on the right side of their dashboard. JIRA is a highly customizable product and you’ll want to figure out the best way to display and track issues for your team.</p>
+                        <p>Some JIRA pages are password protected, so make sure to open up any pages that you want volunteers to have access to.</p> 
+                        <p><img src="img/jira.jpg" style="width:600px;" alt="Screenshot of a JIRA page" /></p>
+                        <hr style="border:1px solid #EEE:">
+                        <h5 style="font-size:18px;">GitLab Issues Board:</h5>
+                        <p>GitLab is an open source tool that integrates with your existing GitHub account. It’s a great way to manage teams through an Agile or Kanban type of process. Each user must have a GitLab account for you to add and assign them tasks on GitHub.</p>
+                         <p><img src="img/gitlab.jpg" style="width:600px;" alt="Screenshot of a GitLab page" /></p>
+                         <p><a href="https://gitlab.com/">https://gitlab.com/</a></p>
+                        <hr style="border:1px solid #EEE;">
+                        <p><h4 style="font-size:18px;">Next Step:</h4></p>
+                        <p><a href="stack3.html"><button class="btn btn-md btn-outline" style="margin:10px; padding:15px 40px;">Software Stack Guidelines</button></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is the community playbook created by Benetech's Code Alliance program. Social Good 2.0.">
+    <meta name="author" content="code alliance, benetech, deep datta">
+
+    <title>Technical Volunteer Playbook</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        <img src="img/logo.png" style="height:45px; margin-top:-10px;" alt="Code Alliance logo white;" />
+                    </a>
+                </li>
+                <li style="color:white;">Table of Contents</li>
+                <li><a href="home.html">Home</a></li>
+
+        <li style="background-color:#032b5a"><a href="buildingaprogram.html">A. Building a Program</a></li>
+        <li><a href="github1.html">I. GitHub for Version Control</a></li>
+        <li><a href="issues2.html">II. Issues Management Tools</a></li>
+        <li><a href="stack3.html">III. Software Stack Guidelines</a></li>
+        <li><a href="qa4.html">IV. QA Process, Jenkins, Docker</a></li>
+        <li><a href="projectsheet5.html">V. Project Sheets</a></li>
+        <li><a href="feedback6.html">VI. Volunteer Feedback Mechanism</a></li>
+        <li><a href="website7.html">VII. Website Space for Volunteers</a></li>
+
+        <li style="background-color:#032b5a"><a href="hackevents.html">B. Social Good Hack Events</a></li>
+        <li><a href="eventtypes.html">Types of Events</a></li>
+        <li><a href="hackschedules.html">Sample Hackathon Schedules</a></li>
+        <li><a href="recruiting.html">Marketing and Recruiting</a></li>
+        <li><a href="volunteerconsiderations.html">Volunteer Considerations</a></li>
+               
+        <li style="background-color:#032b5a"><a href="socialgoodindex.html">C. Social Good Development Index</a></li>
+        <li><a href="checklist.html">Technical Volunteer Checklist</a></li>
+        <li><a href="licenses.html">Open Source Licenses</a></li>
+        <li><a href="otherorgs.html">Tech For Good Volunteer Orgs</a></li>
+        <li><a href="evolution.html">Nonprofit Tech Evolution</a></li>
+        <li><a href="devroles.html">Basic Developer Roles?</a></li>
+        <li><a href="commontools.html">Common Open Source Tools</a></li>
+        <li><a href="deploy.html">Tutorial: Basic Deployment</a></li>
+        <li><a href="hosting.html">Tutorial: Hosting a Static Website</a></li>
+        <li><a href="accessibility.html">Accessibility Testing Tools</a></li>
+        <li><a href="whyopensource.html">Why Open Source</a></li>
+        <li><a href="codealliance.html">Code Alliance Initiative</a></li>
+
+                   <li><a href="http://www.linkedin.com/in/shantanudeepdatta"><span style="font-size:12px;">Deep Datta</span></a></li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        
+        <!-- Top Navigation -->
+        <div style="width:100%; height:50px; background-color:white; border-bottom:1px solid black;">
+        <ul class="main-nav">
+                <li>
+                    <a href="#menu-toggle" id="menu-toggle" style="padding:50px; color:white;"><img src="img/navbars.png" style=" margin-left:-30px; height:30px;" alt="Toggle Menu Bar" /></a>
+                </li>
+                <li><a href="how-to.html">How To Use This Guide</a></li>
+                <li><a href="how-to-contribute.html">How To Contribute</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="project-summary-examples.html">Project Summary Examples</a></li>
+                <li><a href="services.html">Other Services</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Understand GitHub and Install GitHub for Desktop</h1>
+                        <p>The first and probably most important thing to do while setting up your open source development environment is to understand how GitHub works. GitHub is a website that allows users the ability to store, track, and create code together using a core version control technology called Git.</p>
+                        <p>What you want to do is to actually store your application on GitHub itself and use gh-pages to describe the project. These gh-pages should have an area that refers to and links to open issues on the project itself.</p>
+                        <h2 style="font-size:22px;">Tutorial: Install Github for Desktop</h2>
+                        <p>To start, go to <a href="http://www.github.com/">http://www.github.com/</a></p>
+                        <p>Create a Username and Password and choose the “unlimited public repositories for free” option.</p>
+                        <p>Click on “Start a Project” and then verify your email.</p>
+                        <p>After verification, create a (public) repository. Make sure to check the “<b>Initialize this repository with a README</b>” and add an open source license using the drop-down menu (Apache or MIT license). This is standard for open source projects.</p>
+                        <p>A repository is a public location that houses all the files for your specific project. Each repository can be cloned so other users can work on it independently and then push edits back to your master branch. You can give the repository any name you choose, but it makes sense to name it after your project.</p>
+                        <p>Next, click on “<b>Setup on Desktop</b>”</p>
+
+                        <p>Next, you should be led to download <a href="https://desktop.github.com/">GitHub for Desktop</a></p>
+                        <p style="font-weight:bold;">GitHub for Desktop is a graphic user interface application that allows you to push changes to GitHub without having to learn how to use your computer’s command line. It’s an easy way to use GitHub – especially if you aren’t familiar with the command line.</p>
+                        <p>Once you’ve downloaded GitHub for Desktop, you should be able to clone the repository to your personal computer’s desktop. Any changes you make to the files inside this repository can be pushed back up to the master branch of the repository on GitHub.com itself. Branches allow users to create alternative versions of files or applications.</p>
+                        <p>Using the GitHub for Desktop tool, you’ll want to get familiar with how to push and pull code from the master branch using the “Sync” and “Commit to master” buttons on the application. Once you understand the basics of how GitHub works, you can help you organization track technical changes by accepting basic GitHub requests.</p>
+                        <p>You can learn more about GitHub here: <a href="https://guides.github.com/activities/hello-world/">https://guides.github.com/activities/hello-world/</a></p>
+                        <hr style="border:1px solid #EEE;">
+                         <h2 style="font-size:22px;">Tutorial: Create your first gh-pages template</h2>
+                        <p><img src="img/pic1.jpg" alt="GitHub Screenshot" style="width:600px;" /></p>  
+                        <p>GitHub has created an easy way to include instructional web pages with your project. This is called the gh-pages.</p>
+<p>You can create gh-page by clicking on the “<b>Settings</b>” tab in your repository. Once there, scroll down and click on the “<b>Launch automatic page generator</b>” button and follow the instructions to create a generic project page.</p>
+<p><i>We prefer the theme called “Cayman”, but you can choose any theme you desire.</i></p>
+<p>After hitting “<b>Publish Page</b>”, you’ll be taken to the repo and be able to see the files that have been made for your gh-page. To actually view the page, go to the Settings tab again and you’ll see “Your site is published at https://codeallianceorg.github.io/repositoryName/”. Click on the link and you’ll be able to view the page.</p>
+<p>Next, you’ll want to replace the code in the index.html with a descriptive template that helps guide volunteers through the project description, tasks, and open tickets. We’ve provided an example that you can copy and update below. It can also be helpful to include images. In the issues area, you can provide the title of each open issue for the project and link directly from this page.</p>
+<p><a href="https://codeallianceorg.github.io/Green-Impact-Campaign/
+">https://codeallianceorg.github.io/Green-Impact-Campaign/</a></p>
+<p><img src="img/pic2.png" style="width:600px;" alt="Green Impact Campaign Template on GitHub"></p>
+<hr style="border:1px solid #EEE;">
+<h3 style="font-size:18px;">You can copy and paste the template code found here:</h3>
+<xmp>
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Green Impact Campaign by CodeAllianceOrg</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Green Impact Campaign</h1>
+      <h2 class="project-tagline">Environmental</h2>
+      <a href="https://github.com/CodeAllianceOrg/GreenImpactCampaign" class="btn">View on GitHub</a>
+      <a href="https://github.com/CodeAllianceOrg/GreenImpactCampaign/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/CodeAllianceOrg/GreenImpactCampaign/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+    
+    <section class="main-content">
+      
+<h3><a id="organization-name" class="anchor" href="#organization-name" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Organization Name:</h3>
+<p>Green Impact Campaign</p>
+<p><a href="http://greenimpactcampaign.org/">http://greenimpactcampaign.org/</a></p>
+
+<p><img src="https://raw.githubusercontent.com/CodeAllianceOrg/GreenImpactCampaign/gh-pages/green3.jpg" alt="Green Impact Campaign" /></p>
+
+<h3><a id="project-name" class="anchor" href="#project-name" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project Name:</h3>
+<p><b>Map API & GEMS UX Redesign</b></p>
+
+<h3><a id="description" class="anchor" href="#description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description:</h3>
+<p>We provide training and tools to volunteers to conduct free energy assessments for local, small businesses across the country. Businesses sign up through our website (Wordpress) that then creates an account for them in our energy assessment tool (Drupal) called GEMS.</p>
+<p>We want to create a map API on our website (Wordpress) that would show a map of all of the businesses that have participated in our program across the US. We use Formidable for the register forms. We’re hoping that once a business goes through our form, we can extract the data and create a point on a map that shows the business information, like a map directory. Ideally, this happens in real-time. 
+Additionally, we have begun the process of trying to have better UX for businesses and students using GEMS. We would like to have some redesign the tool’s workflow to better serve both users. 
+</p>
+
+<h3><a id="looking-for" class="anchor" href="#looking-for" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Looking For:</h3>
+<p><ul>
+<li>UX Designers/Developers</li>
+<li>Wordpress developers / Drupal developers / Scripting</li>
+<li>Devs for PHP
+Google maps API</li>
+</ul>
+</p>
+
+<h3>
+<a id="open-issues" class="anchor" href="#open-issues" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Open Issues</h3>
+
+<p><b>Issues 1:</b> <a href="https://github.com/CodeAllianceOrg/GreenImpactCampaign/issues/3">Open</a></p>
+
+<p><b>Issues 2:</b> <a href="https://github.com/CodeAllianceOrg/GreenImpactCampaign/issues/3">Open</a></p>
+
+<p><b>Issues 3:</b> <a href="https://github.com/CodeAllianceOrg/GreenImpactCampaign/issues/3">Open</a></p>
+
+<h3><a id="important-links" class="anchor" href="#important-links" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Important Links:</h3>
+<p><a href="http://gems.greenimpactcampaign.org/ ">http://gems.greenimpactcampaign.org/</a></p>
+
+<h3><a id="contact" class="anchor" href="#contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contact for Questions:</h3>
+<p>deepd@benetech.org</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/CodeAllianceOrg/GreenImpactCampaign">Greenimpactcampaign</a> is maintained by <a href="https://github.com/CodeAllianceOrg">CodeAllianceOrg</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+</body>
+</html>
+</xmp>
+                        <hr style="border:1px solid #EEE;">
+                        <p><h4 style="font-size:18px;">Next Step:</h4></p>
+                        <p><a href="issues2.html"><button class="btn btn-md btn-outline" style="margin:10px; padding:15px 40px;">Issues Management Tools</button></a></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

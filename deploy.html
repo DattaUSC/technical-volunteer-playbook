@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is the community playbook created by Benetech's Code Alliance program. Social Good 2.0.">
+    <meta name="author" content="code alliance, benetech, deep datta">
+
+    <title>Technical Volunteer Playbook</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        <img src="img/logo.png" style="height:45px; margin-top:-10px;" alt="Code Alliance logo white;" />
+                    </a>
+                </li>
+                <li style="color:white;">Table of Contents</li>
+                <li><a href="home.html">Home</a></li>
+
+        <li style="background-color:#032b5a"><a href="buildingaprogram.html">A. Building A Program</a></li>
+        <li><a href="github1.html">I. GitHub for Version Control</a></li>
+        <li><a href="issues2.html">II. Issues Management Tools</a></li>
+        <li><a href="stack3.html">III. Software Stack Guidelines</a></li>
+        <li><a href="qa4.html">IV. QA Process, Jenkins, Docker</a></li>
+        <li><a href="projectsheet5.html">V. Project Sheets</a></li>
+        <li><a href="feedback6.html">VI. Volunteer Feedback Mechanism</a></li>
+        <li><a href="website7.html">VII. Website Space for Volunteers</a></li>
+
+        <li style="background-color:#032b5a"><a href="hackevents.html">B. Social Good Hack Events</a></li>
+        <li><a href="eventtypes.html">Types of Events</a></li>
+        <li><a href="hackschedules.html">Sample Hackathon Schedules</a></li>
+        <li><a href="recruiting.html">Marketing and Recruiting</a></li>
+        <li><a href="volunteerconsiderations.html">Volunteer Considerations</a></li>
+               
+        <li style="background-color:#032b5a"><a href="socialgoodindex.html">C. Social Good Development Index</a></li>
+        <li><a href="checklist.html">Technical Volunteer Checklist</a></li>
+        <li><a href="licenses.html">Open Source Licenses</a></li>
+        <li><a href="otherorgs.html">Tech For Good Volunteer Orgs</a></li>
+        <li><a href="evolution.html">Nonprofit Tech Evolution</a></li>
+        <li><a href="devroles.html">Basic Developer Roles?</a></li>
+        <li><a href="commontools.html">Common Open Source Tools</a></li>
+        <li><a href="deploy.html">Tutorial: Basic Deployment</a></li>
+        <li><a href="hosting.html">Tutorial: Hosting a Static Website</a></li>
+        <li><a href="accessibility.html">Accessibility Testing Tools</a></li>
+        <li><a href="whyopensource.html">Why Open Source</a></li>
+        <li><a href="codealliance.html">Code Alliance Initiative</a></li>
+
+                   <li><a href="http://www.linkedin.com/in/shantanudeepdatta"><span style="font-size:12px;">Deep Datta</span></a></li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        
+        <!-- Top Navigation -->
+        <div style="width:100%; height:50px; background-color:white; border-bottom:1px solid black;">
+        <ul class="main-nav">
+                <li>
+                    <a href="#menu-toggle" id="menu-toggle" style="padding:50px; color:white;"><img src="img/navbars.png" style=" margin-left:-30px; height:30px;" alt="Toggle Menu Bar" /></a>
+                </li>
+                <li><a href="how-to.html">How To Use This Guide</a></li>
+                <li><a href="how-to-contribute.html">How To Contribute</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="project-summary-examples.html">Project Summary Examples</a></li>
+                <li><a href="services.html">Other Services</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Tutorial: A Basic Deployment for a Hackathon with Heroku</h1>
+                        <p>When you’re at a short-term event, the first thing that helps volunteers is to setup a common developer environment so that everyone is on the same page about where to push code. We prefer GitHub and Heroku.</p>
+                        <p>1. The first thing to do is to create  new repository in GitHub and name it after the project. You can give it any name you want, but for this example, we’ll use “project2016”.</p>
+                        <p>2. Next, make sure that everyone on the team has a GitHub account and is made a contributor to the GitHub repository you just created. You add collaborators by going to Settings > Collaborators & teams. You then type in their GitHub username and add them. The default collaborator role is set to “Write” access, but you can also make everyone an “Admin” by clicking on Write and selecting Admin from the drop-down menu.</p>
+                        <p><img src="img/t1.jpg" alt="Screenshot" style="width:600px;" /></p>
+                        <p>3. Next, you’ll want to make sure that each collaborator can push code to the repository. If they’re familiar with how to use git on the command line, they’ll know how to do this using the repository URL found under the “Clone or Download” button.</p>
+                        <p><img src="img/t2.jpg" alt="Screenshot" style="width:600px;" /></p>
+                        <p>If they are not familiar with the command line on their computer, ask them to download the GitHub for Desktop tool and push changes using it. They can download the tool here: <a href="https://desktop.github.com/">https://desktop.github.com/</a></p>
+                        <p>Once installed on their local machine, they just clone the repository using the same “Clone or download” button mentioned above. This will open up the repository in their GitHub for Desktop application and will look like a folder (it’s best to place this folder on your Desktop). When changes are made to that folder, the GitHub for Desktop tool will ask you if you want to Sync, commit, and push those changes to the Master branch in GitHub. Get familiar with how this works if you are not. </p>
+                        <p>4. Now that all of your collaborators are using GitHub to make changes, you’ll want to setup your Heroku Deployment environment. Heroku is an online platform that lets users deploy and manage various coding environments in one place. It’s free for non-commercial use.</p>
+                        <p>5. First, make sure you have a Heroku username and password. Anyone who is going to be managing deployments or databases will also want to have access to your Heroku account. If you like using the command line to push changes, download and install the Heroku Toolbelt: <a href="https://toolbelt.heroku.com/">https://toolbelt.heroku.com/</a></p>
+                        <p><i>*** While you can work without the command line, it’s helpful for developers to have the toolbelt installed.</i></p>
+                        <p>6. Next, we’re going to create a new Heroku application (or instance) and connect your GitHub account to it. In the top right-hand corner of your Heroku account, you should see a + sign. Click on it to create a new app. Give the app any name you choose, but ideally, it should correspond with the name of your GitHub repository.</p>
+                        <p>7. Once the application is created, you’ll want to click on it from your main Heroku account dashboard. Next, you’ll want to click on “Settings” and scroll down until you see the Buildpack location. Heroku uses “Buildpacks” to tell the application that you’re coding in a specific language. For this tutorial, we want Heroku to know that your code is an HTML/CSS website on GitHub. To do this, we actually deploy a Heroku app with PHP. </p>
+                        <p>For the Buildpack, type in “heroku/php” and click “Add Buildpack”. You should now see the heroku/php buildpack has been added to your Heroku app. </p>
+                        <p>8. Once we connect Heroku up to your GitHub repository, it will look for an index.php file. Most likely, your repository in GitHub is sitting empty. When you’re ready to upload your code to this repository you’ll probably end up having an index.html file. What you’ll want to do is create another file called index.php and place the following snippet of code inside it:</p>
+                        <p><xmp><?php include("index.html"); ?>
+                        </xmp></p>
+                        <p>Heroku will now find your index.php file and it will automatically include your index.html code to launch your website correctly. The reason we do this is because Heroku apps cannot find html files automatically. Thus we use this quick method with the php buildpack to launch the code sitting on GitHub.</p>
+                        <p>9. The last step is to actually connect Heroku to your GitHub repository. We do this by going to “Deploy” in your Heroku app and then click on the GitHub picture. This should allow you to connect this specific Heroku application to the GitHub repository you choose from the menu. </p>
+                        <p>10. The last step now that they’re connected is to scroll down on the Heroku app page and actually click on “Deploy Branch”. This will deploy the master branch of the repository to a Heroku URL. The URL is your appname.herokuapp.com. If you clicked Deploy, the Heroku app will build a log box will indicate that it has been launched. </p>
+                        <p><img src="img/t3.jpg" alt="Screenshot" style="width:600px;" /></p>
+                        <p>11. Got the URL Heroku just stated and check that you can see your website! Last, you can set automatic deployments on your Heroku App (recommended) by going to the Deploy area again and clicking on “Enable Automatic Deployments”.</p>
+                        <h4>If everything is working, congrats! You’ve setup a quick deployment environment!</h4>
+                        <h5>Every time changes are made to your GitHub repository, they will be automatically deployed to Heroku after a few minutes.</h5>
+                
+                                            <hr style="border:1px solid #EEE;">
+                        <p><h6 style="font-size:18px;">Next Step:</h6></p>
+                        <p><a href="hosting.html"><button class="btn btn-md btn-outline" style="margin:10px; padding:15px 40px;">Tutorial: Hosting a Static Website on GitHub using gh-pages</button></a></p>
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
